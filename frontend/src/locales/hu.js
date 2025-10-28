@@ -1,0 +1,30 @@
+const huTranslations = {
+  title: 'Tápanyag és Allergén Kivonó',
+  subtitle: 'Töltsön fel egy PDF-et a tápértékek és allergének kinyeréséhez',
+  apiKeyLabel: 'Gemini API kulcs:',
+  apiKeyPlaceholder: 'Írja be a Gemini API kulcsot',
+  apiKeyHint: 'Szerezze be az API kulcsot innen',
+  fileLabel: 'PDF fájl kiválasztása:',
+  filePlaceholder: 'Fájl kiválasztása vagy húzza ide',
+  extractButton: 'Adatok kinyerése',
+  processing: 'Feldolgozás...',
+  extractedData: 'Kinyert adatok',
+  nutritionalValues: 'Táplálkozási értékek',
+  allergens: 'Allergének',
+  error: 'Hiba',
+  extractFailed: 'Kinyerés sikertelen',
+  poweredBy: 'Működteti',
+  processingTime: 'Feldolgozási idő',
+  present: 'Jelen van',
+  notPresent: 'Nincs jelen',
+  chooseFile: 'Fájl kiválasztása',
+  or: 'vagy',
+  dropHere: 'húzza ide a PDF-et',
+  showHistory: '▶ Előzmények megtekintése',
+  hideHistory: '▼ Előzmények elrejtése',
+  view: 'Megtekintés',
+  history: 'Előzmények',
+};
+
+export default huTranslations;
+

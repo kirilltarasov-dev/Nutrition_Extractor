@@ -1,0 +1,60 @@
+"""Tests for Pydantic schemas"""
+from app.models.schemas import AllergenData, NutritionData, ExtractResponse
+
+class TestSchemas:
+    """Tests for data models"""
+    
+    def test_allergen_data_default(self):
+        """Test default allergen data"""
+        allergens = AllergenData()
+        assert allergens.gluten == False
+        assert allergens.milk == False
+        assert len(allergens.model_dump()) == 10
+    
+    def test_allergen_data_with_values(self):
+        """Test allergen data with specific values"""
+        allergens = AllergenData(gluten=True, milk=True)
+        assert allergens.gluten == True
+        assert allergens.milk == True
+    
+    def test_nutrition_data_default(self):
+        """Test default nutrition data"""
+        nutrients = NutritionData()
+        assert nutrients.energy == "N/A"
+        assert nutrients.energy_kj == "N/A"
+        assert nutrients.energy_kcal == "N/A"
+        assert nutrients.fat == "N/A"
+        assert len(nutrients.model_dump()) == 8
+    
+    def test_nutrition_data_with_values(self):
+        """Test nutrition data with specific values"""
+        nutrients = NutritionData(energy="1173 kJ", fat="18.9 g")
+        assert nutrients.energy == "1173 kJ"
+        assert nutrients.fat == "18.9 g"
+    
+    def test_extract_response_success(self):
+        """Test successful extract response"""
+        response = ExtractResponse(
+            success=True,
+            allergens=AllergenData(),
+            nutrients=NutritionData(),
+            llm_used="gemini",
+            extracted_text="test",
+            processing_time=1.5
+        )
+        assert response.success == True
+        assert response.llm_used == "gemini"
+        assert response.processing_time == 1.5
+    
+    def test_extract_response_failure(self):
+        """Test failed extract response"""
+        response = ExtractResponse(
+            success=False,
+            error="Test error",
+            allergens=AllergenData(),
+            nutrients=NutritionData(),
+            llm_used="gemini"
+        )
+        assert response.success == False
+        assert response.error == "Test error"
+

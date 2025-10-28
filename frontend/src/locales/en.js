@@ -1,0 +1,30 @@
+const enTranslations = {
+  title: 'Nutrition & Allergen Extractor',
+  subtitle: 'Upload a PDF to extract nutritional values and allergens',
+  apiKeyLabel: 'Gemini API Key:',
+  apiKeyPlaceholder: 'Enter your Gemini API key',
+  apiKeyHint: 'Get your API key from',
+  fileLabel: 'Select PDF File:',
+  filePlaceholder: 'Choose file or drag & drop',
+  extractButton: 'Extract Data',
+  processing: 'Processing...',
+  extractedData: 'Extracted Data',
+  nutritionalValues: 'Nutritional Values',
+  allergens: 'Allergens',
+  error: 'Error',
+  extractFailed: 'Extraction failed',
+  poweredBy: 'Powered by',
+  processingTime: 'Processing Time',
+  present: 'Present',
+  notPresent: 'Not present',
+  chooseFile: 'Choose file',
+  or: 'or',
+  dropHere: 'drop PDF here',
+  showHistory: '▶ Show History',
+  hideHistory: '▼ Hide History',
+  view: 'View',
+  history: 'History',
+};
+
+export default enTranslations;
+

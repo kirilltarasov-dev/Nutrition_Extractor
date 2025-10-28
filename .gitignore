@@ -1,0 +1,25 @@
+# Project root gitignore
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env.production
+frontend/.env.development
+frontend/*.log
+
+# Backend
+backend/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+backend/htmlcov/
+backend/.coverage
+backend/test_*.py
+
+# Common
+.DS_Store
+*.log
+venv/
+.env
+node_modules/
+
+.vercel
