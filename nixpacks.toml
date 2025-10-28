@@ -1,0 +1,9 @@
+[phases.setup]
+nixPkgs = ["python3", "tesseract", "poppler_utils"]
+
+[phases.build]
+dependsOn = ["setup"]
+
+[start]
+cmd = "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+
