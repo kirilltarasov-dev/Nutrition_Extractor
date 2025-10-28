@@ -18,7 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "serve -s build -l $PORT"
+    "serve": "serve -s build -l $PORT",
+    "railway:build": "npm run build",
+    "railway:start": "npx serve -s build -l $PORT"
   },
   "eslintConfig": {
     "extends": [
