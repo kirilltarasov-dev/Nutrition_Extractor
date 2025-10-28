@@ -6,11 +6,7 @@ import huTranslations from './locales/hu';
 
 // Get base URL
 const getApiUrl = () => {
-  // In production on Vercel (use relative path)
-  if (window.location.hostname.includes('vercel.app') || window.location.hostname.includes('vercel.com')) {
-    return '/api/v1';
-  }
-  // In development
+  // Use environment variable if set, otherwise fallback
   return process.env.REACT_APP_API_URL || 'http://localhost:8000/api/v1';
 };
 
