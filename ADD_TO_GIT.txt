@@ -1,0 +1,47 @@
+══════════════════════════════════════════════════════════════════
+  КАКИЕ ФАЙЛЫ ДОБАВИТЬ В GITHUB ДЛЯ RAILWAY
+══════════════════════════════════════════════════════════════════
+
+✅ ОБЯЗАТЕЛЬНО (для работы Railway):
+
+1. Procfile                    ← команда запуска backend
+2. runtime.txt                 ← версия Python
+3. railway.json                ← конфигурация Railway
+4. frontend/nixpacks.toml      ← конфигурация для фронтенда
+5. frontend/Procfile           ← команда запуска фронтенда
+
+══════════════════════════════════════════════════════════════════
+
+📝 ДОПОЛНИТЕЛЬНО (инструкции, опционально):
+
+• DEPLOY_NOW.md               ← быстрая инструкция
+• RAILWAY_BOTH.md            ← подробное руководство
+• RAILWAY_DEPLOY.md          ← инструкция по деплою
+• QUICK_DEPLOY.txt           ← визуальная инструкция
+• COMPLETE_DEPLOYMENT.md     ← полное руководство
+• FRONTEND_DEPLOY.md         ← инструкция по фронтенду
+
+══════════════════════════════════════════════════════════════════
+
+🚀 БЫСТРАЯ КОМАНДА ДЛЯ ДОБАВЛЕНИЯ:
+
+git add Procfile runtime.txt railway.json frontend/nixpacks.toml frontend/Procfile
+git commit -m "Add Railway configuration"
+git push
+
+═══ ИЛИ СО ВСЕМИ ИНСТРУКЦИЯМИ ═══
+
+git add Procfile runtime.txt railway.json frontend/nixpacks.toml frontend/Procfile *.md QUICK_DEPLOY.txt
+git commit -m "Add Railway configuration and deployment guides"
+git push
+
+══════════════════════════════════════════════════════════════════
+
+⚠️  НЕ НУЖНО добавлять в git:
+- venv/ - виртуальное окружение
+- node_modules/ - зависимости Node
+- __pycache__/ - кэш Python
+- .env файлы - переменные окружения (если есть секреты)
+
+══════════════════════════════════════════════════════════════════
+
