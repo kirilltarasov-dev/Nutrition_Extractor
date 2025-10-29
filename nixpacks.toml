@@ -1,7 +1,7 @@
 [phases.setup]
-nixPkgs = ["python3", "tesseract", "poppler_utils"]
+nixPkgs = ["python3", "python3Packages.pip", "python3Packages.setuptools", "tesseract", "poppler_utils"]
 
 [phases.build]
 dependsOn = ["setup"]
-cmds = ["python3 -m ensurepip --upgrade", "python3 -m pip install -r backend/requirements.txt"]
+cmds = ["python3 -m pip install -r backend/requirements.txt"]
 
