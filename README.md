@@ -2,7 +2,7 @@
 
 Automatically extract allergens and nutritional values from PDF documents using AI-powered text extraction.
 
-🌐 **Live Demo:** [https://frontend-4n40acdm1-kirilltarasovdev-4570s-projects.vercel.app/](https://frontend-4n40acdm1-kirilltarasovdev-4570s-projects.vercel.app/)
+🌐 **Live Demo:** [https://nutrition_extractor.app/](https://frontend-tau-rosy-29.vercel.app/)
 
 ## Documentation
 
