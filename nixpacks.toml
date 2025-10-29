@@ -1,12 +1,3 @@
 [phases.setup]
-nixPkgs = ["python3", "curl", "tesseract", "poppler_utils"]
-
-[phases.build]
-dependsOn = ["setup"]
-cmds = [
-  "curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py",
-  "python3 get-pip.py",
-  "python3 -m pip install --upgrade pip setuptools wheel",
-  "python3 -m pip install -r backend/requirements.txt"
-]
+nixPkgs = ["python3", "tesseract", "poppler_utils"]
 
