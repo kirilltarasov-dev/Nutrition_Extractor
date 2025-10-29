@@ -2,7 +2,7 @@
 
 Automatically extract allergens and nutritional values from PDF documents using AI-powered text extraction.
 
-🌐 **Live Demo:** [https://nutrition_extractor.app/](https://frontend-tau-rosy-29.vercel.app/)
+🌐 **Live Demo:** [https://frontend-tau-rosy-29.vercel.app/](https://frontend-tau-rosy-29.vercel.app/)
 
 ## Documentation
 
@@ -25,7 +25,7 @@ Comprehensive documentation is available for different user types:
 - **API Key Storage**: Saves your Gemini API key in localStorage
 - **Language Switcher**: Switch between English and Hungarian
 
-🔗 **Try it now:** [Live Demo](https://frontend-4n40acdm1-kirilltarasovdev-4570s-projects.vercel.app/)
+🔗 **Try it now:** [Live Demo](https://frontend-tau-rosy-29.vercel.app/)
 
 ## Extracted Data
 
@@ -80,7 +80,7 @@ npm start
 
 **Access:** 
 - Local: http://localhost:3000
-- Live: [https://frontend-4n40acdm1-kirilltarasovdev-4570s-projects.vercel.app/](https://frontend-4n40acdm1-kirilltarasovdev-4570s-projects.vercel.app/)
+- Live: [https://frontend-tau-rosy-29.vercel.app/](https://frontend-tau-rosy-29.vercel.app/)
 
 ## 📖 Usage
 
